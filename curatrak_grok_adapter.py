@@ -19,7 +19,7 @@ load_dotenv()
 
 # Get credentials from environment
 API_KEY = os.getenv("AZURE_AI_FOUNDRY_API_KEY") or os.getenv("AZURE_OPENAI_API_KEY")
-ENDPOINT = os.getenv("AZURE_AI_FOUNDRY_ENDPOINT") or "https://azureaiservicecura.services.ai.azure.com/models/chat/completions"
+ENDPOINT = os.getenv("AZURE_AI_FOUNDRY_ENDPOINT") or "https://your-endpoint-here.com/models/chat/completions"
 API_VERSION = os.getenv("AZURE_OPENAI_API_VERSION") or "2024-05-01-preview"
 MODEL = os.getenv("AZURE_AI_FOUNDRY_MODEL") or os.getenv("AZURE_OPENAI_DEPLOYMENT") or "grok-3"
 

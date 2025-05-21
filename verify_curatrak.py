@@ -20,7 +20,7 @@ load_dotenv()
 
 # Get the Azure AI Foundry configuration
 AZURE_API_KEY = os.getenv("AZURE_AI_FOUNDRY_API_KEY")
-AZURE_ENDPOINT = os.getenv("AZURE_AI_FOUNDRY_ENDPOINT", "https://azureaiservicecura.services.ai.azure.com/models/chat/completions")
+AZURE_ENDPOINT = os.getenv("AZURE_AI_FOUNDRY_ENDPOINT", "https://your-endpoint-here.com/models/chat/completions")
 AZURE_API_VERSION = os.getenv("AZURE_OPENAI_API_VERSION", "2024-05-01-preview")
 
 # Get Curatrak configuration
@@ -145,7 +145,7 @@ async def run_verification():
     print("=== Curatrak + Azure AI Foundry Grok-3 Verification ===")
     print(f"Timestamp: {datetime.datetime.now().isoformat()}")
     print(f"Endpoint: {AZURE_ENDPOINT}")
-    print(f"API Key: {AZURE_API_KEY[:5]}...{AZURE_API_KEY[-4:] if AZURE_API_KEY else ''}")
+    print(f"API Key: {'[REDACTED]' if AZURE_API_KEY else 'Not set'}")
     print(f"Curatrak Log File: {CURATRAK_LOG_FILE}")
     
     # Test base Grok client
