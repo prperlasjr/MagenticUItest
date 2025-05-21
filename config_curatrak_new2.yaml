@@ -1,0 +1,60 @@
+# MagenticUI Configuration with Curatrak and Azure AI Foundry Grok-3
+
+# Model client configurations
+orchestrator_client:
+  azure: true
+  model: grok-3
+  api_key: "${AZURE_AI_FOUNDRY_API_KEY}"
+  api_base: "${AZURE_AI_FOUNDRY_ENDPOINT}"
+  api_version: "${AZURE_OPENAI_API_VERSION}"
+  deployment: "${AZURE_AI_FOUNDRY_MODEL}"
+  temperature: 0.7
+  # Curatrak integration
+  curatrak_enabled: "${CURATRAK_ENABLED}"
+  curatrak_url: "${CURATRAK_URL}"
+  curatrak_api_key: "${CURATRAK_API_KEY}"
+
+web_surfer_client:
+  azure: true
+  model: grok-3
+  api_key: "${AZURE_AI_FOUNDRY_API_KEY}"
+  api_base: "${AZURE_AI_FOUNDRY_ENDPOINT}"
+  api_version: "${AZURE_OPENAI_API_VERSION}"
+  deployment: "${AZURE_AI_FOUNDRY_MODEL}"
+  temperature: 0.7
+  # Curatrak integration
+  curatrak_enabled: "${CURATRAK_ENABLED}"
+  curatrak_url: "${CURATRAK_URL}"
+  curatrak_api_key: "${CURATRAK_API_KEY}"
+
+coder_client:
+  azure: true
+  model: grok-3
+  api_key: "${AZURE_AI_FOUNDRY_API_KEY}"
+  api_base: "${AZURE_AI_FOUNDRY_ENDPOINT}"
+  api_version: "${AZURE_OPENAI_API_VERSION}"
+  deployment: "${AZURE_AI_FOUNDRY_MODEL}"
+  temperature: 0.7
+  # Curatrak integration
+  curatrak_enabled: "${CURATRAK_ENABLED}"
+  curatrak_url: "${CURATRAK_URL}"
+  curatrak_api_key: "${CURATRAK_API_KEY}"
+
+file_surfer_client:
+  azure: true
+  model: grok-3
+  api_key: "${AZURE_AI_FOUNDRY_API_KEY}"
+  api_base: "${AZURE_AI_FOUNDRY_ENDPOINT}"
+  api_version: "${AZURE_OPENAI_API_VERSION}"
+  deployment: "${AZURE_AI_FOUNDRY_MODEL}"
+  temperature: 0.7
+  # Curatrak integration
+  curatrak_enabled: "${CURATRAK_ENABLED}"
+  curatrak_url: "${CURATRAK_URL}"
+  curatrak_api_key: "${CURATRAK_API_KEY}"
+
+# Curatrak monitoring configuration
+curatrak_monitoring:
+  enabled: "${CURATRAK_MONITORING_ENABLED}"
+  log_file: "${CURATRAK_LOG_FILE}"
+  monitor_interval: 5  # Seconds between monitoring updates
